@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0369EA1DDB6A1A00237622 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0369E91DDB6A1A00237622 /* PostViewController.swift */; };
+		7F03838B1DCB930800428477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F03838A1DCB930800428477 /* LaunchScreen.storyboard */; };
+		7F0827FD1E005B950010E3B7 /* UserGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0827FC1E005B950010E3B7 /* UserGenerator.swift */; };
+		7F0BAC501DD48B9400C7A0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0BAC4E1DD48B9400C7A0BD /* Main.storyboard */; };
+		7F0BAC541DD48EB000C7A0BD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC531DD48EB000C7A0BD /* FeedViewController.swift */; };
+		7F0BAC561DD4C19C00C7A0BD /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC551DD4C19C00C7A0BD /* FriendsViewController.swift */; };
+		7F0BAC581DD4C1B700C7A0BD /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC571DD4C1B700C7A0BD /* DiscoverViewController.swift */; };
+		7F0BAC5A1DD4C1CA00C7A0BD /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC591DD4C1CA00C7A0BD /* MyProfileViewController.swift */; };
+		7F0BAC5C1DD4C1DA00C7A0BD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */; };
+		7F0BAC5F1DD4E0DA00C7A0BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC5E1DD4E0DA00C7A0BD /* User.swift */; };
+		7F0E3A641DE7077B00FF53CD /* UsersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E3A631DE7077B00FF53CD /* UsersFactory.swift */; };
+		7F2AE09D1DD47C860045579D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AE09C1DD47C860045579D /* AppDelegate.swift */; };
+		7F2AE09F1DD47C900045579D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AE09E1DD47C900045579D /* LoginViewController.swift */; };
+		7F4711FB1E031ACE00E98BA2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4711FA1E031ACE00E98BA2 /* UserCell.swift */; };
+		7F4FA2AC1DF83CA400066169 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4FA2AB1DF83CA400066169 /* DatePickerViewController.swift */; };
+		7F5BBA511DDE09AA006AFC69 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BBA501DDE09AA006AFC69 /* FeedCell.swift */; };
+		7F5BBA551DDE1B06006AFC69 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BBA541DDE1B06006AFC69 /* Post.swift */; };
+		7FD80A841E1BAF5900A7BAAC /* PublicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */; };
+		7FD80A881E1D192500A7BAAC /* PostsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A871E1D192500A7BAAC /* PostsQuery.swift */; };
+		7FD80A8A1E1D1B4F00A7BAAC /* PostsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */; };
+		7FFCCC961DD233E70089E521 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCCC951DD233E70089E521 /* SWRevealViewController.m */; };
+		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
+		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
+		81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816C1A49DB6800E65899 /* Parse.framework */; };
+		81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81761A49E0D500E65899 /* libsqlite3.dylib */; };
+		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
+		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
+		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		A0E8F6A421545D4146436F30 /* Pods_Tinsnappook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D342A645F639E3238AC87764 /* Pods_Tinsnappook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19CB6286CC641E4223E84091 /* Pods-Tinsnappook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinsnappook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinsnappook/Pods-Tinsnappook.debug.xcconfig"; sourceTree = "<group>"; };
+		7F0369E91DDB6A1A00237622 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = Tinsnappook/PostViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F03838A1DCB930800428477 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F0827FC1E005B950010E3B7 /* UserGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserGenerator.swift; path = Tinsnappook/UserGenerator.swift; sourceTree = "<group>"; };
+		7F0BAC4F1DD48B9400C7A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Resources/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		7F0BAC531DD48EB000C7A0BD /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Tinsnappook/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F0BAC551DD4C19C00C7A0BD /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = Tinsnappook/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F0BAC571DD4C1B700C7A0BD /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverViewController.swift; path = Tinsnappook/DiscoverViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F0BAC591DD4C1CA00C7A0BD /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProfileViewController.swift; path = Tinsnappook/MyProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsViewController.swift; path = Tinsnappook/NotificationsViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F0BAC5E1DD4E0DA00C7A0BD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tinsnappook/User.swift; sourceTree = "<group>"; };
+		7F0E3A631DE7077B00FF53CD /* UsersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersFactory.swift; sourceTree = "<group>"; };
+		7F2AE09C1DD47C860045579D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Tinsnappook/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		7F2AE09E1DD47C900045579D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Tinsnappook/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F2AE0A11DD47D950045579D /* Tinsnappook-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinsnappook-Bridging-header.h"; sourceTree = "<group>"; };
+		7F4711FA1E031ACE00E98BA2 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = Tinsnappook/UserCell.swift; sourceTree = SOURCE_ROOT; };
+		7F4FA2AB1DF83CA400066169 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerViewController.swift; path = Tinsnappook/DatePickerViewController.swift; sourceTree = SOURCE_ROOT; };
+		7F5BBA501DDE09AA006AFC69 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = Tinsnappook/FeedCell.swift; sourceTree = SOURCE_ROOT; };
+		7F5BBA541DDE1B06006AFC69 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Tinsnappook/Post.swift; sourceTree = "<group>"; };
+		7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicProfileViewController.swift; path = Tinsnappook/PublicProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		7FD80A871E1D192500A7BAAC /* PostsQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsQuery.swift; path = Tinsnappook/PostsQuery.swift; sourceTree = "<group>"; };
+		7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsDAO.swift; path = Tinsnappook/PostsDAO.swift; sourceTree = "<group>"; };
+		7FFCCC941DD233E70089E521 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		7FFCCC951DD233E70089E521 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BA81451A49DA1800E65899 /* Tinsnappook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinsnappook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		81BA816C1A49DB6800E65899 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		81BA81761A49E0D500E65899 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		A2C51CAAF69B1C3F4DAAD516 /* Pods-Tinsnappook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinsnappook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tinsnappook/Pods-Tinsnappook.release.xcconfig"; sourceTree = "<group>"; };
+		D342A645F639E3238AC87764 /* Pods_Tinsnappook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinsnappook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81BA81421A49DA1800E65899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */,
+				81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */,
+				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
+				81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */,
+				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
+				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
+				A0E8F6A421545D4146436F30 /* Pods_Tinsnappook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F0BAC5D1DD4E08800C7A0BD /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F0BAC5E1DD4E0DA00C7A0BD /* User.swift */,
+				7F5BBA541DDE1B06006AFC69 /* Post.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		7F0E3A621DE7075400FF53CD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7F0E3A631DE7077B00FF53CD /* UsersFactory.swift */,
+				7F0827FC1E005B950010E3B7 /* UserGenerator.swift */,
+				7FD80A871E1D192500A7BAAC /* PostsQuery.swift */,
+				7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		7FFCCC931DD233E70089E521 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FFCCC941DD233E70089E521 /* SWRevealViewController.h */,
+				7FFCCC951DD233E70089E521 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			path = Resources/SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		7FFCCC971DD233FE0089E521 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7FFCCC931DD233E70089E521 /* SWRevealViewController */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		814C3AC51B69877600E307BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F03838A1DCB930800428477 /* LaunchScreen.storyboard */,
+				814C3AC81B69877600E307BB /* Images.xcassets */,
+				814C3AC91B69877600E307BB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81BA813C1A49DA1800E65899 = {
+			isa = PBXGroup;
+			children = (
+				7F2AE0A11DD47D950045579D /* Tinsnappook-Bridging-header.h */,
+				81BA81471A49DA1800E65899 /* ParseStarterProject */,
+				7F0BAC5D1DD4E08800C7A0BD /* DataModel */,
+				814C3AC51B69877600E307BB /* Resources */,
+				7F0E3A621DE7075400FF53CD /* Shared */,
+				81BA816A1A49DB5600E65899 /* Frameworks */,
+				7FFCCC971DD233FE0089E521 /* Libraries */,
+				81BA81461A49DA1800E65899 /* Products */,
+				CA3A6B0D314EFA19346A1AB6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		81BA81461A49DA1800E65899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81BA81451A49DA1800E65899 /* Tinsnappook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
+			isa = PBXGroup;
+			children = (
+				7F0BAC4E1DD48B9400C7A0BD /* Main.storyboard */,
+				7F2AE09C1DD47C860045579D /* AppDelegate.swift */,
+				7F2AE09E1DD47C900045579D /* LoginViewController.swift */,
+				7F0BAC531DD48EB000C7A0BD /* FeedViewController.swift */,
+				7F5BBA501DDE09AA006AFC69 /* FeedCell.swift */,
+				7F0BAC551DD4C19C00C7A0BD /* FriendsViewController.swift */,
+				7F4711FA1E031ACE00E98BA2 /* UserCell.swift */,
+				7F0369E91DDB6A1A00237622 /* PostViewController.swift */,
+				7F0BAC571DD4C1B700C7A0BD /* DiscoverViewController.swift */,
+				7F0BAC591DD4C1CA00C7A0BD /* MyProfileViewController.swift */,
+				7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */,
+				7F4FA2AB1DF83CA400066169 /* DatePickerViewController.swift */,
+				7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */,
+			);
+			path = ParseStarterProject;
+			sourceTree = "<group>";
+		};
+		81BA816A1A49DB5600E65899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BA816B1A49DB6800E65899 /* Bolts.framework */,
+				81BA816C1A49DB6800E65899 /* Parse.framework */,
+				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
+				81BA81801A49E10C00E65899 /* ParseUI.framework */,
+				81BA81751A49E0C500E65899 /* System Frameworks */,
+				D342A645F639E3238AC87764 /* Pods_Tinsnappook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81BA81751A49E0C500E65899 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */,
+				81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */,
+				81BA81781A49E0DB00E65899 /* AudioToolbox.framework */,
+				81BA81761A49E0D500E65899 /* libsqlite3.dylib */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		CA3A6B0D314EFA19346A1AB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CB6286CC641E4223E84091 /* Pods-Tinsnappook.debug.xcconfig */,
+				A2C51CAAF69B1C3F4DAAD516 /* Pods-Tinsnappook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81BA81441A49DA1800E65899 /* Tinsnappook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Tinsnappook" */;
+			buildPhases = (
+				68343537C9918008B2852649 /* [CP] Check Pods Manifest.lock */,
+				81BA81411A49DA1800E65899 /* Sources */,
+				81BA81421A49DA1800E65899 /* Frameworks */,
+				81BA81431A49DA1800E65899 /* Resources */,
+				2B8FC41D251B728D0DAEB34B /* [CP] Embed Pods Frameworks */,
+				691D1FF935A34AAA61C3B08E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tinsnappook;
+			productName = ParseStarterProject;
+			productReference = 81BA81451A49DA1800E65899 /* Tinsnappook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81BA813D1A49DA1800E65899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Parse;
+				TargetAttributes = {
+					81BA81441A49DA1800E65899 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Tinsnappook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81BA813C1A49DA1800E65899;
+			productRefGroup = 81BA81461A49DA1800E65899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81BA81441A49DA1800E65899 /* Tinsnappook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81BA81431A49DA1800E65899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F0BAC501DD48B9400C7A0BD /* Main.storyboard in Resources */,
+				7F03838B1DCB930800428477 /* LaunchScreen.storyboard in Resources */,
+				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B8FC41D251B728D0DAEB34B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tinsnappook/Pods-Tinsnappook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68343537C9918008B2852649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		691D1FF935A34AAA61C3B08E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tinsnappook/Pods-Tinsnappook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81BA81411A49DA1800E65899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2AE09F1DD47C900045579D /* LoginViewController.swift in Sources */,
+				7F0BAC561DD4C19C00C7A0BD /* FriendsViewController.swift in Sources */,
+				7F0BAC5A1DD4C1CA00C7A0BD /* MyProfileViewController.swift in Sources */,
+				7F5BBA551DDE1B06006AFC69 /* Post.swift in Sources */,
+				7F4711FB1E031ACE00E98BA2 /* UserCell.swift in Sources */,
+				7F0827FD1E005B950010E3B7 /* UserGenerator.swift in Sources */,
+				7FD80A8A1E1D1B4F00A7BAAC /* PostsDAO.swift in Sources */,
+				7FD80A841E1BAF5900A7BAAC /* PublicProfileViewController.swift in Sources */,
+				7F2AE09D1DD47C860045579D /* AppDelegate.swift in Sources */,
+				7F5BBA511DDE09AA006AFC69 /* FeedCell.swift in Sources */,
+				7F0369EA1DDB6A1A00237622 /* PostViewController.swift in Sources */,
+				7F0BAC581DD4C1B700C7A0BD /* DiscoverViewController.swift in Sources */,
+				7FD80A881E1D192500A7BAAC /* PostsQuery.swift in Sources */,
+				7F0BAC5F1DD4E0DA00C7A0BD /* User.swift in Sources */,
+				7F0BAC541DD48EB000C7A0BD /* FeedViewController.swift in Sources */,
+				7F4FA2AC1DF83CA400066169 /* DatePickerViewController.swift in Sources */,
+				7FFCCC961DD233E70089E521 /* SWRevealViewController.m in Sources */,
+				7F0E3A641DE7077B00FF53CD /* UsersFactory.swift in Sources */,
+				7F0BAC5C1DD4C1DA00C7A0BD /* NotificationsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F0BAC4E1DD48B9400C7A0BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F0BAC4F1DD48B9400C7A0BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81BA81621A49DA1800E65899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81BA81631A49DA1800E65899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81BA81651A49DA1800E65899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CB6286CC641E4223E84091 /* Pods-Tinsnappook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daviddefco.tinsnappook;
+				PRODUCT_NAME = Tinsnappook;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tinsnappook-Bridging-header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81BA81661A49DA1800E65899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C51CAAF69B1C3F4DAAD516 /* Pods-Tinsnappook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daviddefco.tinsnappook;
+				PRODUCT_NAME = Tinsnappook;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tinsnappook-Bridging-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Tinsnappook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BA81621A49DA1800E65899 /* Debug */,
+				81BA81631A49DA1800E65899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Tinsnappook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BA81651A49DA1800E65899 /* Debug */,
+				81BA81661A49DA1800E65899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81BA813D1A49DA1800E65899 /* Project object */;
+}

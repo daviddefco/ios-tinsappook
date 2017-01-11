@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FeedViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:FeedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.refreshPosts() -&gt; ():FeedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FriendsViewController.(isFriendOfMine(userId : String) -&gt; Bool).(closure #1):FriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "results.count">
+            </PersistentString>
+            <PersistentString
+               value = "results.count &gt; 0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserCell.awakeFromNib() -&gt; ():UserCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.userImage.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.userImage.frame.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FriendsViewController.(loadUsers() -&gt; ()).(closure #1):FriendsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.loadPosts() -&gt; ():FeedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.(loadPosts() -&gt; ()).(closure #1).(closure #1):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "post.createdAt ">
+            </PersistentString>
+            <PersistentString
+               value = "UsersFactory.instance.users">
+            </PersistentString>
+            <PersistentString
+               value = "post.message">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PostsFactory.(loadPosts() -&gt; ()).(closure #1):PostsFactory.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FriendsViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:FriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.users[indexPath.row].isFriend">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
