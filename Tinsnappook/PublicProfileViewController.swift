@@ -73,6 +73,8 @@ class PublicProfileViewController: UIViewController {
     @IBAction func friendsButtonClicked(_ sender: UIButton) {
         let currentUser = UsersFactory.instance.currentUser
         UsersFactory.instance.stopBeingFriends(me: (currentUser?.objectID)!, exFriend: (self.user?.objectID)!)
+        let alert = AlertFactory.instance.createInformativeAlert(title: "Friendship Ended", message: "You are no longer friends. Add new friends in the 'Discover' menu")
+        self.present(alert, animated: true, completion: nil)
     }
 
     @IBAction func chatButtonClicked(_ sender: UIButton) {

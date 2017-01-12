@@ -42,9 +42,11 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         post.saveInBackground { (success, error) in
             self.stopActivityIndicator()
             if error != nil {
-                self.sendInformativeAlert(title: "Could not Store Image", message: (error?.localizedDescription)!)
+                let alert = AlertFactory.instance.createInformativeAlert(title: "Could not Store Image", message: (error?.localizedDescription)!)
+                self.present(alert, animated: true, completion: nil)
             } else {
-                self.sendInformativeAlert(title: "Image Stored", message: "Your post has been succesfully published")
+                let alert = AlertFactory.instance.createInformativeAlert(title: "Image Stored", message: "Your post has been succesfully published")
+                self.present(alert, animated: true, completion: nil)
                 self.postTextView.text = ""
                 self.postImage.image = #imageLiteral(resourceName: "send-photo")
             }
@@ -93,12 +95,6 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.present(imagePicker, animated: true, completion: nil)
     }
 
-    private func sendInformativeAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
-    }
     
     /*
     // MARK: - Navigation

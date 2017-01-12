@@ -27,6 +27,7 @@
 		7FD80A841E1BAF5900A7BAAC /* PublicProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */; };
 		7FD80A881E1D192500A7BAAC /* PostsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A871E1D192500A7BAAC /* PostsQuery.swift */; };
 		7FD80A8A1E1D1B4F00A7BAAC /* PostsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */; };
+		7FD80A8C1E27A9E300A7BAAC /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD80A8B1E27A9E300A7BAAC /* AlertFactory.swift */; };
 		7FFCCC961DD233E70089E521 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCCC951DD233E70089E521 /* SWRevealViewController.m */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
@@ -61,6 +62,7 @@
 		7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicProfileViewController.swift; path = Tinsnappook/PublicProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		7FD80A871E1D192500A7BAAC /* PostsQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsQuery.swift; path = Tinsnappook/PostsQuery.swift; sourceTree = "<group>"; };
 		7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsDAO.swift; path = Tinsnappook/PostsDAO.swift; sourceTree = "<group>"; };
+		7FD80A8B1E27A9E300A7BAAC /* AlertFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
 		7FFCCC941DD233E70089E521 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7FFCCC951DD233E70089E521 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				7F0827FC1E005B950010E3B7 /* UserGenerator.swift */,
 				7FD80A871E1D192500A7BAAC /* PostsQuery.swift */,
 				7FD80A891E1D1B4F00A7BAAC /* PostsDAO.swift */,
+				7FD80A8B1E27A9E300A7BAAC /* AlertFactory.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2AE09F1DD47C900045579D /* LoginViewController.swift in Sources */,
+				7FD80A8C1E27A9E300A7BAAC /* AlertFactory.swift in Sources */,
 				7F0BAC561DD4C19C00C7A0BD /* FriendsViewController.swift in Sources */,
 				7F0BAC5A1DD4C1CA00C7A0BD /* MyProfileViewController.swift in Sources */,
 				7F5BBA551DDE1B06006AFC69 /* Post.swift in Sources */,
