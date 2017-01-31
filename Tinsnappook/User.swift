@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 class User {
     var objectID: String!
@@ -18,6 +19,8 @@ class User {
     
     var birthDate : Date?
     var gender: Bool?
+    
+    var location : CLLocationCoordinate2D?
     
     init(id: String, name: String, email: String, thumbnail: UIImage? = #imageLiteral(resourceName: "no-friend")) {
         self.objectID = id

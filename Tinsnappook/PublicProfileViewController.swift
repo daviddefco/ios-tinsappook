@@ -92,6 +92,14 @@ class PublicProfileViewController: UIViewController {
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    // MARK :- Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showUserLocation" {
+            let destinationVC = segue.destination as! UserMapViewController
+            destinationVC.user = self.user
+        }
+    }
 }
 
 extension PublicProfileViewController: UITableViewDataSource, UITableViewDelegate {

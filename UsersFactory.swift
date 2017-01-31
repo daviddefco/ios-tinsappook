@@ -27,7 +27,12 @@ class UsersFactory: NSObject {
     }
     
     func loadUsers() {
+        // Filtramos los usuarios por geolocalizacion
+        let currentLocation = PFUser.current()?["geoPoint"] as! PFGeoPoint
         let query = PFUser.query()
+        // query?.whereKey("geoPoint", nearGeoPoint: currentLocation)
+        query?.whereKey("geoPoint", nearGeoPoint: currentLocation, withinKilometers: 500.0)
+        
         query?.findObjectsInBackground(block: { (results, error) in
             if error != nil {
                 print ("Error en la recuperacion de usuarios \(error?.localizedDescription)")
@@ -63,6 +68,11 @@ class UsersFactory: NSObject {
                             myUser.thumbnail = #imageLiteral(resourceName: "no-friend")
                         }
 
+                        if let geoPoint = user["geoPoint"] {
+                            let location = CLLocationCoordinate2D(latitude: (geoPoint as AnyObject).latitude, longitude: (geoPoint as AnyObject).longitude)
+                            myUser.location = location
+                        }
+                        
                         // Rellenado del campo de amistad en asíncrono
                         let query = PFQuery(className: "UserFriends")
                         query.whereKey("idUser", equalTo: (PFUser.current()?.objectId)!)
@@ -111,6 +121,14 @@ class UsersFactory: NSObject {
                 if let data = data {
                     self.currentUser?.thumbnail = UIImage(data: data)
                 }
+            }
+        }
+        
+        PFGeoPoint.geoPointForCurrentLocation { (geoPoint, error) in
+            if let geoPoint = geoPoint {
+                self.currentUser?.location = CLLocationCoordinate2D(latitude: geoPoint.latitude, longitude: geoPoint.longitude)
+                pfUser["geoPoint"] = geoPoint
+                pfUser.saveInBackground()
             }
         }
     }

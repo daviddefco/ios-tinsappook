@@ -52,5 +52,7 @@
 	<string>This app needs access to your gallery to attach photos to your posts</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This app needs to meke use of your camera to upload photos to your post</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs your current location to suggest candidate firned in an accurate manner</string>
 </dict>
 </plist>

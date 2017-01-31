@@ -76,9 +76,7 @@ class DiscoverViewController: UIViewController {
         imageView.transform = rotation
         
         if gestureRecognizer.state == .ended {
-            if imageView.center.x < 100 {
-                print("Reject User")
-            } else if imageView.center.x >= self.view.bounds.width - 100 {
+            if imageView.center.x >= self.view.bounds.width - 100 {
                 // Logica de creacion de la relacion de amistad
                 self.users[self.userIndex].isFriend = true
                 

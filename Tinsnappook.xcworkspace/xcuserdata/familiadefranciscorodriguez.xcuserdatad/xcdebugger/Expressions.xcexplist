@@ -28,19 +28,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "UsersFactory.loadUsers() -&gt; ():UsersFactory.swift">
+      </ContextState>
+      <ContextState
          contextName = "PublicProfileViewController.reloadUserPosts() -&gt; ():PublicProfileViewController.swift">
       </ContextState>
       <ContextState
          contextName = "PostsQuery.fillPostData(fromParseResult : PFObject, imageData : Data) -&gt; Post?:PostsQuery.swift">
          <PersistentStrings>
             <PersistentString
+               value = "result[&quot;idUser&quot;] as! String">
+            </PersistentString>
+            <PersistentString
                value = "UsersFactory.instance.users">
             </PersistentString>
             <PersistentString
                value = "UsersFactory.instance.findUser(idUser: &quot;pteQytse57&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "result[&quot;idUser&quot;] as! String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -54,6 +57,11 @@
       </ContextState>
       <ContextState
          contextName = "UsersFactory.(loadUsers() -&gt; ()).(closure #1):UsersFactory.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "PFUser.current()?[&quot;geoPoint&quot;] as! PFGeoPoint">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

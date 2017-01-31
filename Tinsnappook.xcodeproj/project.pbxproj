@@ -18,6 +18,7 @@
 		7F0BAC5C1DD4C1DA00C7A0BD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */; };
 		7F0BAC5F1DD4E0DA00C7A0BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BAC5E1DD4E0DA00C7A0BD /* User.swift */; };
 		7F0E3A641DE7077B00FF53CD /* UsersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E3A631DE7077B00FF53CD /* UsersFactory.swift */; };
+		7F1B3BAA1E37B18000E298CB /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B3BA91E37B18000E298CB /* UserMapViewController.swift */; };
 		7F2AE09D1DD47C860045579D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AE09C1DD47C860045579D /* AppDelegate.swift */; };
 		7F2AE09F1DD47C900045579D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AE09E1DD47C900045579D /* LoginViewController.swift */; };
 		7F4711FB1E031ACE00E98BA2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4711FA1E031ACE00E98BA2 /* UserCell.swift */; };
@@ -52,6 +53,7 @@
 		7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsViewController.swift; path = Tinsnappook/NotificationsViewController.swift; sourceTree = SOURCE_ROOT; };
 		7F0BAC5E1DD4E0DA00C7A0BD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Tinsnappook/User.swift; sourceTree = "<group>"; };
 		7F0E3A631DE7077B00FF53CD /* UsersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersFactory.swift; sourceTree = "<group>"; };
+		7F1B3BA91E37B18000E298CB /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserMapViewController.swift; path = Tinsnappook/UserMapViewController.swift; sourceTree = SOURCE_ROOT; };
 		7F2AE09C1DD47C860045579D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Tinsnappook/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		7F2AE09E1DD47C900045579D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Tinsnappook/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		7F2AE0A11DD47D950045579D /* Tinsnappook-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinsnappook-Bridging-header.h"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				7FD80A831E1BAF5900A7BAAC /* PublicProfileViewController.swift */,
 				7F4FA2AB1DF83CA400066169 /* DatePickerViewController.swift */,
 				7F0BAC5B1DD4C1DA00C7A0BD /* NotificationsViewController.swift */,
+				7F1B3BA91E37B18000E298CB /* UserMapViewController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				7F0BAC541DD48EB000C7A0BD /* FeedViewController.swift in Sources */,
 				7F4FA2AC1DF83CA400066169 /* DatePickerViewController.swift in Sources */,
 				7FFCCC961DD233E70089E521 /* SWRevealViewController.m in Sources */,
+				7F1B3BAA1E37B18000E298CB /* UserMapViewController.swift in Sources */,
 				7F0E3A641DE7077B00FF53CD /* UsersFactory.swift in Sources */,
 				7F0BAC5C1DD4C1DA00C7A0BD /* NotificationsViewController.swift in Sources */,
 			);
